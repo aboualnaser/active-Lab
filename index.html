@@ -22,6 +22,25 @@
                 align-items:center; 
                     
             }
+            jumbotron
+            {
+                text-align: center;
+                padding: 30px;
+            }
+          .first  {
+                background-color: red;
+                -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+            }
+      @keyframes example {
+   0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:20px; top:0px;}
+    50%  {background-color: blue; left:20px; top:20px;}
+    75%  {background-color: green; left:0px; top:20px;}
+    100% {background-color: red; left:0px; top:0px;}
+            }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -32,31 +51,34 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-   
+        <div class="container" >
 
-    <div class="container">
+    <div class="jumbotron"> 
         <div class="row">
-            <h1 class='powerful'>Powerful, yet simple project management</h1>
-            <div class="col-lg-3 col-md-4 col-ms-12 col-xs-12" >
-                <h2 class="text-justify">
-                    
-                    some Content1
-                </h2>
-                 <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="304" height="300">
+             <h1>Powerful, yet simple project management</h1>
+        
+           <div class="first col-lg-3 col-md-3 col-ms-6 col-xs-12 " >
+                <h3>some Content1</h3>
+                 <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="150" height="150">
+                 <p> </p>
             </div>
-            <div class="col-lg-3 col-md-4 col-ms-12 col-xs-12">
-                <h1>Time Tracking</h1>
-                <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="304" height="300">
+
+            <div class=" col-lg-3 col-md-3 col-ms-6 col-xs-12 "  >
+                <h3>Time Tracking</h3>
+                <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="150" height="150">
+                <p> Stay organized with an advanced list and track your project. </p>
             </div>
-            <div class="col-lg-3 col-md-4 col-ms-12 col-xs-12">
-                <h1>some content3</h1>
-                <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="304" height="300">
+            <div class="col-lg-3 col-md-3 col-ms-6 col-xs-12">
+                <h3>some content3</h3>
+                <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="150" height="150">
+                <p>Efficiently work together with your team to deliver top-notch results. </p>
             </div>
-            <div class="col-lg-3 col-md-4 col-ms-12 col-xs-12">
-                <h1>some content4</h1>
-                <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="304" height="300">
+            <div class="col-lg-3 col-md-3 col-ms-6 col-xs-12" id="mycaven">
+                <h3>some content4</h2>
+                <img src="./img/Smile.jpg" class="img-rounded" alt="Smile" width="150" height="150">
+                <p> </p>
             </div>
-            
+           
             
             
             
@@ -72,6 +94,6 @@
    
         <script src="js/vendor/bootstrap.min.js"></script>
 
-       //hhhhh//
+        </div>  
     </body>
 </html>
